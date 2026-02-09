@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personal Assistant</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Personal Assistant</h1>
+    <p class="subtitle">Record desktop audio, then transcribe with OpenAI.</p>
+
+    <section class="card">
+      <h2>New Recording</h2>
+      <input id="title" placeholder="Session title" />
+      <div class="row">
+        <button id="startBtn">Start Recording</button>
+        <button id="stopBtn" disabled>Stop</button>
+      </div>
+      <p id="status"></p>
+    </section>
+
+    <section class="card">
+      <h2>Sessions</h2>
+      <div id="sessions"></div>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
